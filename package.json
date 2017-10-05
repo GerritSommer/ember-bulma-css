@@ -1,7 +1,7 @@
 {
   "name": "ember-bulma-css",
   "version": "0.0.3",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Import Sass files from bulma css",
   "keywords": [
     "ember-addon",
     "bulma",
@@ -17,7 +17,7 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/GerritSommer/ember-bulma-css",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
