@@ -10,7 +10,7 @@ module.exports = {
   afterInstall: function () {
     const stylePath       = path.join('app', 'styles');
     const file            = path.join(stylePath, `app.scss`);
-    const folders         = [ 'base', 'components', 'elements', 'grid', 'utilities' ];
+    const folders         = [ 'utilities', 'base', 'elements', 'components', 'grid', 'layout' ];
 
     const importStatement = folders.map(function(folder) {
       return `@import "ember-bulma-css/${folder}/_all";`;
