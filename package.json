@@ -3,10 +3,16 @@
   "version": "0.0.0",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "bulma",
+    "css",
+    "sass"
   ],
   "license": "MIT",
-  "author": "",
+  "author": {
+    "name": "Gerrit Sommer",
+    "email": "gerrit.sommer@outlook.com"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -18,7 +24,9 @@
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.3.0"
+    "ember-cli-babel": "^6.3.0",
+    "ember-cli-sass": "^7.0.0",
+    "bulma": "^0.5.3"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -38,12 +46,15 @@
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.15.0",
-    "loader.js": "^4.2.3"
+    "loader.js": "^4.2.3",
+    "ember-bulma-css": "*"
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "defaultBlueprint": "ember-bulma-css",
+    "demoURL": "http://bulma.io/documentation/overview/start/"
   }
 }
