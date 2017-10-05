@@ -8,16 +8,13 @@ module.exports = {
   normalizeEntityName: function () { },
 
   afterInstall: function () {
-    const importStatement = `
-      @import "ember-bulma-css/base/_all";
-      @import "ember-bulma-css/components/_all";
-      @import "ember-bulma-css/elements/_all";
-      @import "ember-bulma-css/grid/_all";
-      @import "ember-bulma-css/utilities/_all";
-    `;
-
     const stylePath       = path.join('app', 'styles');
     const file            = path.join(stylePath, `app.scss`);
+    const folders         = [ 'base', 'components', 'elements', 'grid', 'utilities' ];
+
+    const importStatement = folders.map(function(folder) {
+      return `@import "ember-bulma-css/${folder}/_all";`;
+    }).join('\n');
 
     if (!fs.existsSync(stylePath)) {
       fs.mkdirSync(stylePath);
