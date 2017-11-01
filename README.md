@@ -23,6 +23,10 @@ You need to have ember-cli-sass installed, otherwise the addon will install it a
 
 `ember install ember-bulma-sass`
 
+## Update
+
+- 0.0.5 The order of the import statements in the README is fixed.
+
 ## Usage
 
 The addon will try to add the general import statements to your `app.scss` file
@@ -37,21 +41,26 @@ The addon will try to add the general import statements to your `app.scss` file
 @import "ember-bulma-css/layout/_all";
 ```
 
+To import all files:
+
+```sass
+// @import "ember-bulma-css/bulma"
+```
+
 Instead of importing all modules, you can import them individually:
 
 ```sass
-// UTILITIES
-@import "ember-bulma-css/utilities/animation";
-@import "ember-bulma-css/utilities/controls";
-@import "ember-bulma-css/utilities/derived-variables";
-@import "ember-bulma-css/utilities/functions";
-@import "ember-bulma-css/utilities/initial-variables";
-@import "ember-bulma-css/utilities/mixins";
-@import "ember-bulma-css/utilities/variables";
-// BASE
+@import "ember-bulma-css/utilities/initial-variables.sass";
+@import "ember-bulma-css/utilities/functions.sass";
+@import "ember-bulma-css/utilities/derived-variables.sass";
+@import "ember-bulma-css/utilities/animations.sass";
+@import "ember-bulma-css/utilities/mixins.sass";
+@import "ember-bulma-css/utilities/controls.sass";
+
+@import "ember-bulma-css/base/minireset";
 @import "ember-bulma-css/base/generic";
 @import "ember-bulma-css/base/helpers";
-@import "ember-bulma-css/base/minireset";
+
 @import "ember-bulma-css/elements/box";
 @import "ember-bulma-css/elements/button";
 @import "ember-bulma-css/elements/container";
@@ -60,12 +69,12 @@ Instead of importing all modules, you can import them individually:
 @import "ember-bulma-css/elements/icon";
 @import "ember-bulma-css/elements/image";
 @import "ember-bulma-css/elements/notification";
-@import "ember-bulma-css/elements/other";
 @import "ember-bulma-css/elements/progress";
 @import "ember-bulma-css/elements/table";
 @import "ember-bulma-css/elements/tag";
 @import "ember-bulma-css/elements/title";
-// COMPONENTS
+@import "ember-bulma-css/elements/other";
+
 @import "ember-bulma-css/components/breadcrumb";
 @import "ember-bulma-css/components/card";
 @import "ember-bulma-css/components/dropdown";
@@ -79,11 +88,11 @@ Instead of importing all modules, you can import them individually:
 @import "ember-bulma-css/components/pagination";
 @import "ember-bulma-css/components/panel";
 @import "ember-bulma-css/components/tabs";
-// GRID
+
 @import "ember-bulma-css/grid/columns";
 @import "ember-bulma-css/grid/tiles";
-// LAYOUT
-@import "ember-bulma-css/layout/footer";
+
 @import "ember-bulma-css/layout/hero";
 @import "ember-bulma-css/layout/section";
+@import "ember-bulma-css/layout/footer";
 ```
