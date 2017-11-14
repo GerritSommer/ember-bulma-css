@@ -83,7 +83,6 @@ Instead of importing all modules, you can import them individually:
 @import "ember-bulma-css/components/menu";
 @import "ember-bulma-css/components/message";
 @import "ember-bulma-css/components/modal";
-@import "ember-bulma-css/components/nav";
 @import "ember-bulma-css/components/navbar";
 @import "ember-bulma-css/components/pagination";
 @import "ember-bulma-css/components/panel";
