@@ -21,7 +21,7 @@ You need to have ember-cli-sass installed, otherwise the addon will install it a
 
 `ember install ember-cli-sass`
 
-`ember install ember-bulma-sass`
+`ember install ember-bulma-css`
 
 ## Update
 
