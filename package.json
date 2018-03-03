@@ -1,6 +1,6 @@
 {
   "name": "ember-bulma-css",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Import Sass files from bulma css",
   "keywords": [
     "ember-addon",
