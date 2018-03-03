@@ -5,6 +5,10 @@ const mergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
   name: 'ember-bulma-css',
+   isDevelopingAddon() {
+    return true;
+  },
+
 
   treeForStyles: function treeForStyles(tree) {
     const styleTrees = [];
@@ -21,4 +25,8 @@ module.exports = {
 
     return mergeTrees(styleTrees, { overwrite: true });
   },
+
+  included: function(/* app */) {
+    this._super.included.apply(this, arguments);
+  }
 };

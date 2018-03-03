@@ -31,7 +31,7 @@ You need to have ember-cli-sass installed, otherwise the addon will install it a
 
 ## Update
 
-- 0.0.5 The order of the import statements in the README is fixed.
+- 0.2.0 Updated Ember cli to 3.0.0 and bulma 0.6.2
 
 ## Usage
 
@@ -45,12 +45,6 @@ The addon will try to add the general import statements to your `app.scss` file
 @import "ember-bulma-css/components/_all";
 @import "ember-bulma-css/grid/_all";
 @import "ember-bulma-css/layout/_all";
-```
-
-To import all files:
-
-```sass
-// @import "ember-bulma-css/bulma"
 ```
 
 Instead of importing all modules, you can import them individually:
