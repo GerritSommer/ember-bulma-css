@@ -108,7 +108,7 @@ Contributing
 
 * `ember test` – Runs the test suite on the current Ember version
 * `ember test --server` – Runs the test suite in "watch mode"
-* `npm test` – Runs `ember try:each` to test your addon against multiple Ember versions
+* `ember try:each` – Runs the test suite against multiple Ember versions
 
 ### Running the dummy application
 
@@ -121,3 +121,14 @@ License
 ------------------------------------------------------------------------------
 
 This project is licensed under the [MIT License](LICENSE.md).
+
+
+Changes
+------------------------------------------------------------------------------
+
+For Bulma changes see: https://github.com/jgthms/bulma/blob/master/CHANGELOG.md
+
+0.3.0
+- updated ember-cli to 3.1.4
+- update ember-cli-update
+- updated bulma to 0.7.1
