@@ -121,3 +121,14 @@ License
 ------------------------------------------------------------------------------
 
 This project is licensed under the [MIT License](LICENSE.md).
+
+
+Changes
+------------------------------------------------------------------------------
+
+For Bulma changes see: https://github.com/jgthms/bulma/blob/master/CHANGELOG.md
+
+0.3.0
+- updated ember-cli to 3.1.4
+- update ember-cli-update
+- updated bulma to 0.7.1
