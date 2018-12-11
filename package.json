@@ -1,6 +1,6 @@
 {
   "name": "ember-bulma-css",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Import Sass files from bulma css",
   "keywords": [
     "ember-addon",
@@ -27,7 +27,7 @@
     "test:all": "ember try:each"
   },
   "dependencies": {
-    "bulma": "^0.7.1",
+    "bulma": "0.7.2",
     "ember-cli-babel": "^6.16.0",
     "ember-cli-sass": "^7.2.0"
   },
