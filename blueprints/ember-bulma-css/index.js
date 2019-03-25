@@ -29,8 +29,8 @@ module.exports = {
     }
 
     return this.addPackagesToProject([
-      { name: 'bulma', target: '^0.5.3' },
-      { name: 'ember-cli-sass', target: '^6.1.2' }
+      { name: 'bulma', target: '^0.7.4' },
+      { name: 'ember-cli-sass', target: '^10.0.0' }
     ]);
   }
 };
