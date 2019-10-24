@@ -49,6 +49,7 @@ The addon will try to add the general import statements to your `app.scss` file
 @import "ember-bulma-css/utilities/_all";
 @import "ember-bulma-css/base/_all";
 @import "ember-bulma-css/elements/_all";
+@import "ember-bulma-css/form/_all";
 @import "ember-bulma-css/components/_all";
 @import "ember-bulma-css/grid/_all";
 @import "ember-bulma-css/layout/_all";
@@ -76,16 +77,24 @@ Instead of importing all modules, you can import them individually:
 @import "ember-bulma-css/elements/icon";
 @import "ember-bulma-css/elements/image";
 @import "ember-bulma-css/elements/notification";
+@import "ember-bulma-css/elements/other";
 @import "ember-bulma-css/elements/progress";
 @import "ember-bulma-css/elements/table";
 @import "ember-bulma-css/elements/tag";
 @import "ember-bulma-css/elements/title";
-@import "ember-bulma-css/elements/other";
+
+@import "ember-bulma-css/form/checkbox-radio";
+@import "ember-bulma-css/form/file";
+@import "ember-bulma-css/form/input-textarea";
+@import "ember-bulma-css/form/select";
+@import "ember-bulma-css/form/shared";
+@import "ember-bulma-css/form/tools";
 
 @import "ember-bulma-css/components/breadcrumb";
 @import "ember-bulma-css/components/card";
 @import "ember-bulma-css/components/dropdown";
 @import "ember-bulma-css/components/level";
+@import "ember-bulma-css/components/list";
 @import "ember-bulma-css/components/media";
 @import "ember-bulma-css/components/menu";
 @import "ember-bulma-css/components/message";
@@ -98,9 +107,9 @@ Instead of importing all modules, you can import them individually:
 @import "ember-bulma-css/grid/columns";
 @import "ember-bulma-css/grid/tiles";
 
+@import "ember-bulma-css/layout/footer";
 @import "ember-bulma-css/layout/hero";
 @import "ember-bulma-css/layout/section";
-@import "ember-bulma-css/layout/footer";
 ```
 
 Contributing
@@ -138,6 +147,11 @@ Changes
 ------------------------------------------------------------------------------
 
 For Bulma changes see: https://github.com/jgthms/bulma/blob/master/CHANGELOG.md
+0.6.0
+- upgraded bulma to 0.8.0
+
+Deprecation
+- ".control.has-icon" deprecated in favor of ".control.has-icons"
 
 0.3.0
 - updated ember-cli to 3.1.4
