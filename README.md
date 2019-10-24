@@ -4,6 +4,18 @@ This Ember addon creates a shim to import the sass files from
 [Bulma.io](http://bulma.io/) in its own namespace.
 
 I created this addon to avoid collisions in import statements:
+=======
+
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v3.4 or above
+* Ember CLI v2.13 or above
+* Node.js v8 or above
+
+
+Installation
+------------------------------------------------------------------------------
 
 use
 ```sass
@@ -115,8 +127,6 @@ Contributing
 
 * `ember serve`
 * Visit the dummy application at [http://localhost:4200](http://localhost:4200).
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 
 License
 ------------------------------------------------------------------------------
