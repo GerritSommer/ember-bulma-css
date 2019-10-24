@@ -18,12 +18,12 @@ Installation
 ------------------------------------------------------------------------------
 
 use
-```sass
+```scss
 @import "ember-bulma-css/base/_all";
 ```
 
 instead of
-```sass
+```scss
 @import "base/_all";
 ```
 
@@ -45,7 +45,7 @@ You need to have ember-cli-sass installed, otherwise the addon will install it a
 The addon will try to add the general import statements to your `app.scss` file
 (the order is important, so the variables are declared before usage).
 
-```sass
+```scss
 @import "ember-bulma-css/utilities/_all";
 @import "ember-bulma-css/base/_all";
 @import "ember-bulma-css/elements/_all";
@@ -57,7 +57,7 @@ The addon will try to add the general import statements to your `app.scss` file
 
 Instead of importing all modules, you can import them individually:
 
-```sass
+```scss
 @import "ember-bulma-css/utilities/initial-variables.sass";
 @import "ember-bulma-css/utilities/functions.sass";
 @import "ember-bulma-css/utilities/derived-variables.sass";
@@ -83,11 +83,11 @@ Instead of importing all modules, you can import them individually:
 @import "ember-bulma-css/elements/tag";
 @import "ember-bulma-css/elements/title";
 
+@import "ember-bulma-css/form/shared";
 @import "ember-bulma-css/form/checkbox-radio";
 @import "ember-bulma-css/form/file";
 @import "ember-bulma-css/form/input-textarea";
 @import "ember-bulma-css/form/select";
-@import "ember-bulma-css/form/shared";
 @import "ember-bulma-css/form/tools";
 
 @import "ember-bulma-css/components/breadcrumb";
